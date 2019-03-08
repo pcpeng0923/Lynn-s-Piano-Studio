@@ -1,9 +1,15 @@
 // widescreens
 @include mediaXl {
+  .lessons-info {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 // desktops & laptops
 @include mediaLg {
+  .lessons-info {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // tablets & small laptops
@@ -56,10 +62,18 @@
 
     grid-template-columns: 1fr;
   }
+
+  .lessons-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // smartphones
 @include mediaSm {
+  .lessons-info {
+    grid-template-columns: 1fr;
+  }
+
   main#home h1 {
     margin-top: 10vh;
   }
